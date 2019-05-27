@@ -1,0 +1,17 @@
+// Styling for the call to action section
+.faq {
+  padding: 20px 0;
+  h2 {
+    margin: 0 auto 20px;
+  }
+
+  .faq-question {
+	color: rgba(0, 0, 0, 0.48);
+  }
+
+  .faq-answer {
+  	margin-bottom: 40px;
+  	padding-left: 22px;
+  	color: fade-out(#212529, .2);
+  }
+}

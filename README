@@ -1,0 +1,5 @@
+gulp4 dev
+gulp4 publish
+
+## AWS Sync
+aws s3 sync . s3://aws-website-istikhara-5bg91 --delete --exclude "*.DS_Store*" --acl bucket-owner-full-control --acl public-read

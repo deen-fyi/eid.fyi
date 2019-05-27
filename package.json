@@ -1,0 +1,45 @@
+{
+  "title": "Eid.fyi",
+  "name": "startbootstrap-creative",
+  "version": "4.0.0-beta",
+  "description": "Creative is a stylish one page HTML theme for Bootstrap.",
+  "keywords": [
+    "css",
+    "sass",
+    "html",
+    "responsive",
+    "theme",
+    "template"
+  ],
+  "homepage": "https://startbootstrap.com/template-overviews/creative",
+  "bugs": {
+    "url": "https://github.com/BlackrockDigital/startbootstrap-creative/issues",
+    "email": "feedback@startbootstrap.com"
+  },
+  "license": "MIT",
+  "author": "Zaheer Mohiuddin",
+  "dependencies": {
+    "bootstrap": "4.1.3",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.14.3"
+  },
+  "devDependencies": {
+    "browser-sync": "2.18.13",
+    "del": "^3.0.0",
+    "gulp-awspublish": "^3.3.0",
+    "gulp-awspublish-router": "^0.1.3",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-cloudfront-invalidate-aws-publish": "^0.2.1",
+    "gulp-debug": "^3.1.0",
+    "gulp-ga": "0.0.8",
+    "gulp-header": "^1.8.9",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-purifycss": "^0.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace-important": "^1.0.2-alpha",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp4": "^4.0.2"
+  }
+}

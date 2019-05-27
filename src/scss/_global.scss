@@ -1,0 +1,111 @@
+// Global styling for this template
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  @include serif-font;
+  font-family: 'Lato', sans-serif;
+}
+
+hr {
+  max-width: 50px;
+  border-width: 1px;
+  margin-left: 0px;
+  color: lighten($theme-primary, .2);
+}
+
+hr.light {
+  border-color: white;
+}
+
+a {
+  color: $theme-primary;
+  @include transition-all;
+  &:focus,
+  &:hover {
+    color: darken($theme-primary, .1);
+  }
+}
+
+h4 {
+  color: #90C5F9;
+}
+
+h2 {
+  color: #9091F9;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Quicksand', sans-serif;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.bg-primary {
+  background-color: $theme-primary !important;
+}
+
+.bg-dark {
+  color: white;
+  background-color: $gray-darker !important;
+}
+
+.text-faded {
+  color: fade-out(white, .3);
+}
+
+section {
+  padding: 50px 0;
+}
+
+.section-heading {
+  margin-top: 0;
+}
+
+::-moz-selection {
+  color: white;
+  background: $gray-darker;
+  text-shadow: none;
+}
+
+::selection {
+  color: white;
+  background: $gray-darker;
+  text-shadow: none;
+}
+
+img::selection {
+  color: white;
+  background: transparent;
+}
+
+img::-moz-selection {
+  color: white;
+  background: transparent;
+}
+
+body {
+  -webkit-tap-highlight-color: $gray-darker;
+}
+
+@font-face {
+  font-family: "Uthman";
+  src: url("fonts/UthmanTN1-V10.otf") format("otf");
+}
+
+@font-face {
+  font-family: "UthmanB";
+  src: url("fonts/UthmanTN1B-V10.otf") format("otf");
+}
