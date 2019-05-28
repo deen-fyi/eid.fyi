@@ -1,5 +1,11 @@
+## Initialize Project
+npm install
+
+## Standard Dev Flow
 gulp4 dev
-gulp4 publish
+
+## Publish Flow
+gulp4 publishProd
 
 ## AWS Sync
 aws s3 sync . s3://eid-fyi --delete --exclude "*.DS_Store*" --acl bucket-owner-full-control --acl public-read
