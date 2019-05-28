@@ -88,6 +88,25 @@ body {
   font-family: "UthmanB";
   src: url("fonts/UthmanTN1B-V10.otf") format("otf"); }
 
+#navMenu .btn {
+  font-size: 0.8em;
+  text-transform: none; }
+
+#navMenu .btn-secondary {
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+  background-color: #7db58a; }
+  #navMenu .btn-secondary.active {
+    background-color: #19a539; }
+  #navMenu .btn-secondary.hover {
+    background-color: #54af69; }
+
+#toggleContainer {
+  padding-top: 10px; }
+  @media (max-width: 767.98px) {
+    #toggleContainer {
+      padding-right: 20px; } }
+
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
   background-color: white;
@@ -174,7 +193,7 @@ header.masthead {
   header.masthead .header-content {
     position: relative;
     width: 100%;
-    padding: 25px 15px 20px;
+    padding: 10px 15px 20px;
     text-align: center; }
     header.masthead .header-content .header-content-inner h1 {
       font-size: 35px;
@@ -360,3 +379,6 @@ header.masthead {
 
 .btn-xl {
   padding: 15px 30px; }
+
+.adha {
+  display: none; }

@@ -1,4 +1,32 @@
 // Styling for the navbar
+#navMenu {
+  .btn {
+    font-size: 0.8em;
+    text-transform: none;
+  }
+
+  .btn-secondary {
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+
+    background-color: #7db58a;
+    &.active {
+      background-color: #19a539;
+    }
+    &.hover {
+      background-color: #54af69;
+    }
+  }
+}
+
+#toggleContainer {
+  padding-top: 10px;
+  
+  @media (max-width: 767.98px) {
+    padding-right: 20px;
+  }
+}
+
 #mainNav {
   border-color: fade-out($gray-darker, .95);
   background-color: white;

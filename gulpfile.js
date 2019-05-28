@@ -4,7 +4,7 @@ var browserSync = require('browser-sync').create();
 var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
-var uglify = require('gulp-uglify');
+const terser = require('gulp-terser');
 var htmlmin = require('gulp-htmlmin');
 var htmlreplace = require('gulp-html-replace');
 const gulpReplaceImportant = require('gulp-replace-important');
@@ -71,7 +71,7 @@ function minifyCss() {
 // Minify custom JS
 function minifyJs() {
   return gulp.src('src/js/creative.js')
-    .pipe(uglify())
+    .pipe(terser())
     .pipe(header(banner, {
       pkg: pkg
     }))
@@ -282,7 +282,7 @@ exports.publish = publish;
 exports.browserSyncFunc = browserSyncFunc;
 exports.watcherFunc = watcherFunc;
 
-var core = gulp.parallel(gulp.series(sassFunc, minifyCss), minifyJs, copyFunc, copyImgs, copyMp3s, copyFonts, copyHtml);
+var core = gulp.parallel(gulp.series(sassFunc, minifyCss), minifyJs, copyImgs, copyMp3s, copyFonts, copyHtml);
 var defaultBuild = gulp.series(cleanBuild, core, cleanPostBuild);
 
 // Dev task with browserSync
@@ -291,7 +291,7 @@ gulp.task('dev', devTasks);
 
 // Publish to AWS
 var publishTasks = gulp.series(defaultBuild, publish);
-gulp.task('publish', publishTasks);
+gulp.task('publishProd', publishTasks);
 
 // Default task
 gulp.task('default', defaultBuild);
