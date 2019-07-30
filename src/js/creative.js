@@ -1,7 +1,7 @@
 const DAY_KEY = 'day';
 var FITR_NAME = 'Fitr';
 var ADHA_NAME = 'Adha';
-var DEFAULT_DAY = FITR_NAME;
+var DEFAULT_DAY = ADHA_NAME;
 var params = new URLSearchParams(location.search);
 
 $(document).ready(function() {
