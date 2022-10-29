@@ -20,7 +20,7 @@
   "author": "Zaheer Mohiuddin",
   "dependencies": {},
   "devDependencies": {
-    "browser-sync": "2.18.13",
+    "browser-sync": "2.27.10",
     "del": "^3.0.0",
     "gulp-awspublish": "^3.3.0",
     "gulp-awspublish-router": "^0.1.3",
